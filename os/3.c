@@ -7,7 +7,7 @@ int main() {
 	
 	if(pid == 0) {
 		if(execlp("./a.out","",NULL) < 0) {  //we can pass any second argument in execpl here
-						     // execute a.out from current directory
+						     // It will execute a.out from current directory
 			printf("exec failed\n");
 		}
 	}
